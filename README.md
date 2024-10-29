@@ -42,7 +42,7 @@ let arr = ["a", "b", "c"];
 
 ## Methods
 
-**.push(), .unshift(), .pop(), .shift(), .splice(), .includes(), .indexOf(), .substring()**
+**.push(), .unshift(), .pop(), .shift(), .splice() "Vill lärare att ni minst gör", .includes(), .indexOf(), .substring()**
 
 ```js
 let fruits = ["kiwi", "apple", "pear"];
@@ -86,7 +86,7 @@ let str = "Supercalifragilisticexpialidocious";
 
 22. I strängen ovan, plocka fram de `7` _sista_ tecknena.
 
-## Advanced methods ( high order methods )
+## Advanced methods ( high order methods ) "OK att vänta med"
 
 ### .filter()
 
