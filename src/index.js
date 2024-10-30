@@ -62,4 +62,89 @@
 //   console.log(`${index}: ${frukt}`);
 // });
 
+<<<<<<< HEAD
 l
+=======
+// -----------------------------------------
+// High order functions: map(), filter(), reduce()
+
+let personer = [
+  { namn: "Anna", ålder: 28 },
+  { namn: "Björn", ålder: 35 },
+  { namn: "Cecilia", ålder: 42 },
+];
+
+//   Exempel 2: Använda map() för att Skapa en Ny Array
+
+let namnLista = personer.map(function (person) {
+  return person.namn;
+});
+
+console.log(namnLista); // ["Anna", "Björn", "Cecilia"]
+
+//   Exempel 3: Använda filter() för att Få Fram Särskilda Objekt
+
+let äldreÄn30 = personer.filter(function (person) {
+  return person.ålder > 30;
+});
+
+console.log(äldreÄn30);
+
+//   xempel 4: Introduktion till reduce()
+
+// Förklaring:
+// reduce() används för att reducera en array till ett enda värde genom att utföra en funktion på varje element i arrayen i ordning.
+
+// Syntax:
+
+array.reduce(function (ackumulator, nuvarandeVärde) {
+  // kodblock
+}, initieringsvärde);
+
+// -----------------------------------------
+// Objects:
+// Exempel 1: Skapa ett Objekt
+
+let person = {
+  förnamn: "Anna",
+  efternamn: "Svensson",
+  ålder: 28,
+  stad: "Stockholm",
+};
+console.log(person);
+
+// Exempel 2: Åtkomst till Objektets Egenskaper
+
+console.log(person.förnamn); // "Anna"
+console.log(person["efternamn"]); // "Svensson"
+
+// Exempel 3: Ändra och Lägg till Egenskaper
+
+person.ålder = 29;
+person.land = "Sverige";
+console.log(person);
+
+// Objektmetoder
+// Exempel 4: Lägg till en Metod till Objektet
+
+person.hälsa = function () {
+  console.log(`Hej, jag heter ${this.förnamn} ${this.efternamn}.`);
+};
+
+person.hälsa();
+
+// Exempel 5: this Nyckelordet
+// this refererar till det aktuella objektet.
+
+// 2.3 Objekt i Arrayer
+// Exempel 6: Array av Objekt
+
+let böcker = [
+  { titel: "Mästaren och Margarita", författare: "Mikhail Bulgakov" },
+  { titel: "Brott och Straff", författare: "Fjodor Dostojevskij" },
+];
+
+for (let bok of böcker) {
+  console.log(`${bok.titel} av ${bok.författare}`);
+}
+>>>>>>> 5a1a518ca57b5e58c7d51492c189d1906de1bce0
