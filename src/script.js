@@ -1,6 +1,6 @@
 console.log("Hello array thuesday");
 
-<<<<<<< HEAD
+
 // //1. Gör en array som innehåller 5 st olika frukter av datatypen `string`.
 // // let fruits = ["apple", "banana", "orange", "mango", "pear"];
 
@@ -46,7 +46,7 @@ console.log("Hello array thuesday");
 結果として、配列 a の指定した位置に配列 b の要素が追加されます。*/
 
 
-//9. _Klona_ ovanstående array. 配列 arr をクローン
+// //9. _Klona_ ovanstående array. 配列 arr をクローン
 // let arr = ["a", "b", "c"];
 // let clonedArr = [...arr]; // Klonar arrayen
 // console.log(clonedArr); // Output: ["a", "b", "c"]
@@ -91,28 +91,44 @@ console.log("Hello array thuesday");
 // console.log(names); // Output: ["David", "Maja"]
 
 
-// 17. Spegelvänd på arrayen ovan.
+// // 17. Spegelvänd på arrayen ovan.
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// nums.reverse();
+// console.log(nums); // 出力: [9, 8, 7, 6, 5, 4, 3, 2, 1]
 
-// 18. Kika om strängen ovan innehåller bokstaven `n`.
 
-// 19. Kika om strängen ovan innehåller bokstaven `x`.
+// // 18. Kika om strängen ovan innehåller bokstaven `n`.
+// let str = "Supercalifragilisticexpialidocious";
 
-// 20. I ovanstående array, hitta vilket _position_ första förekomsten av `p` har.
+// // 'n' が含まれているか確認する
+// let str = "Supercalifragilisticexpialidocious";
+// console.log(str.includes('n'));
 
-// 21. I strängen ovan, plocka fram de `5` _första_ tecknena.
 
-// 22. I strängen ovan, plocka fram de `7` _sista_ tecknena.
+
+// // 19. Kika om strängen ovan innehåller bokstaven `x`.
+// console.log(str.includes('x'));
+
+
+// // 20. I ovanstående array, hitta vilket _position_ första förekomsten av `p` har.
+// console.log(str.indexOf('p'));
+
+
+// // 21. I strängen ovan, plocka fram de `5` _första_ tecknena.
+// console.log(str.slice(0,5));
+
+
+// // 22. I strängen ovan, plocka fram de `7` _sista_ tecknena.
+// console.log(str.slice(-7));
 
 
 
 //## Loop array
 
 // 34. Loopa ut följande array med en `forEach()`-loop. `console.log()` varje ord. forEach() ループを使用して配列をループ
-let fruits = ["apelsin", "päron", "äpple", "kiwi"];
+// let fruits = ["apelsin", "päron", "äpple", "kiwi"];
 
-fruits.forEach(function(fruit) {
-    console.log(fruit);
-});
+// fruits.forEach(fruit => console.log(fruit));
 // Output:
 // apelsin
 // päron
@@ -120,104 +136,63 @@ fruits.forEach(function(fruit) {
 // kiwi
 
 
-// 35. Loopa ut följande array med en `for of`-loop. `console.log()` varje ord. for of ループを使用して配列をループ
-for (let fruit of fruits) {
-    console.log(fruit);
-}
-// Output:
-// apelsin
-// päron
-// äpple
-// kiwi
+// // 35. Loopa ut följande array med en `for of`-loop. `console.log()` varje ord. for of ループを使用して配列をループ
+// for (let fruit of fruits) {
+//     console.log(fruit);
+// }
+// // Output:
+// // apelsin
+// // päron
+// // äpple
+// // kiwi
 
 
-// 36. Loopa ut följande array med en `for`-loop. `console.log()` varje ord.
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]);
-}
-// Output:
-// apelsin
-// päron
-// äpple
-// kiwi
+// // 36. Loopa ut följande array med en `for`-loop. `console.log()` varje ord.
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i]);
+// }
+// // Output:
+// // apelsin
+// // päron
+// // äpple
+// // kiwi
 
 
-// 37. Loopa ut följande array. För varje varv i loopen ska du också skriva ut index. ex:
-for (let i = 0; i < fruits.length; i++) {
-    console.log(`${i} - ${fruits[i]}`);
-}
-// Output:
-// 0 - apelsin
-// 1 - päron
-// 2 - äpple
-// 3 - kiwi
+// // 37. Loopa ut följande array. För varje varv i loopen ska du också skriva ut index. ex:
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(`${i} - ${fruits[i]}`);
+// }
+// // Output:
+// // 0 - apelsin
+// // 1 - päron
+// // 2 - äpple
+// // 3 - kiwi
 
-=======
-// 1.1 Skapa och Manipulera Arrayer
-// Exempel 1: Skapa en Array
-let fruits = ["apple", "mango", "banana"];
 
-// console.log("fruits: ", fruits);
+// /* 
+// How to Get the Last Element of an Array in JavaScript:
+// const array = [1, 2, 3, 4, 5];
 
-// Exempel 2: Åtkomst till Array-element
-// console.log("fruit at index 0: ", fruits[0]);
-// console.log("fruit at index 1: ", fruits[1]);
-// console.log("fruit at index 2: ", fruits[2]);
+// const last = array[array.length - 1];
 
-// Exempel 3: Ändra ett Array-element
-fruits[1] = "mandarin";
-// console.log("fruit at index 1 from line 15 and not from line 5: ", fruits[1]);
-// console.log("fruits from line 15 and not from line 5: ", fruits);
+// const last = array.slice(-1);
 
-// 1.2 Array-metoder
-// Exempel 4: push() och pop()
-fruits.push("kiwi");
-// console.log("fruits: line 21", fruits);
+// const myFish = ["angel", "clown", "mandarin", "sturgeon"];
+// const removed = myFish.splice(-2, 1);
 
-let removedFruit = fruits.pop();
+// // myFish is ["angel", "clown", "sturgeon"]
+// // removed is ["mandarin"]
+// */
 
-// console.log("fruits line 24: ", fruits);
-// console.log("removedFruit line 24: ", typeof removedFruit);
 
-//
-// Exempel 5: unshift() och shift()
-
-let lenghtOfFruitsArray = fruits.unshift("strawberry");
-// console.log("fruits: line 32", fruits);
-// console.log("lenghtOfFruitsArray: line 32", lenghtOfFruitsArray);
-
-let strawberry = fruits.shift();
-console.log("fruits: line 36", fruits);
-// console.log("strawberry: line 36", strawberry);
-
-//
-// Exempel 6: splice()
-// Lägg till element med splice()
-fruits.splice(1, 0, "lime", "watermelon");
-
-// console.log("fruits: line 43", fruits);
-
-// Ta bort element med splice()
-fruits.splice(2, 1);
-// console.log("fruits: line 48", fruits);
-fruits.splice(3, 1);
-console.log("fruits: line 50", fruits);
-
-// 1.3 Iterera över Arrayer
-// Exempel 7: For-loop
-for (let i = 0; i < fruits.length; i++) {
-  console.log("fruit at index...", fruits[i]);
-}
-// Exempel 8: For-of-loop
-for (const fruit of fruits) {
-  console.log(
-    "Each fruit from the fruits array inside the for-of-looop:  ",
-    fruit
-  );
-}
-// Exempel 9: forEach()
-
-fruits.forEach(function (fruit, index) {
-  console.log("fruit: ", fruit);
-});
->>>>>>> c463aa6bc6b6eea7d2debdaf1ccb46e4e765e684
+let persons = [
+    {firstName: "Anna", age: 28},
+    {firstName: "Jon", age: 18},
+    {firstName: "Greta", age: 68},
+  ];
+  
+  console.log("persons: ", persons);
+  
+  //map
+  
+  
