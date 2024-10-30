@@ -131,7 +131,7 @@ let persons = [
 
 26. Skriv ut alla namn som är _under 18 år_ från arrayen ovan.
 
-### .sort()
+### .sort() frivilligt
 
 ```js
 let arr = ["beta", "alfa", "gamma"];
@@ -156,6 +156,10 @@ let nums = [1, 5, 7, 9, 3, 4, 2, 6, 8];
 32. I person-arrayen ovan, gör om alla namn till _versaler_.
 
 33. I person-arrayen ovan, _spegelvänd_ alla namn.
+
+### .reduce()
+
+Varje student skall på egen hand öva på reduce(), leta internet eller använd ai för att skapa/öva på minst 3 övningar med reduce()
 
 ## Loop arrays
 
